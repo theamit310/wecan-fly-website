@@ -1,0 +1,15 @@
+<!-- This is a placeholder SVG for the WeCan Fly logo. Replace with an actual logo image file. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e88e5" />
+      <stop offset="100%" stop-color="#ff9800" />
+    </linearGradient>
+  </defs>
+  <g>
+    <path fill="url(#gradient)" d="M40,20 l20,0 l5,15 l5,-15 l20,0 l-15,40 l-20,0 z" />
+    <path fill="#1e88e5" d="M10,20 l8,0 l12,40 l-8,0 l-2,-8 l-12,0 l-2,8 l-8,0 z M12,44 l8,0 l-4,-16 z" />
+    <path fill="#ff9800" d="M116,36 a16,16 0 1,1 0,0.1 M140,20 l8,0 l0,40 l-8,0 z M156,20 l28,0 l0,8 l-20,0 l0,8 l16,0 l0,8 l-16,0 l0,16 l-8,0 z" />
+  </g>
+  <text x="100" y="70" font-family="Arial" font-size="10" fill="#263238" text-anchor="middle">Travel India, Live Free</text>
+</svg>

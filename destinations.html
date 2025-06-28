@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover popular tourist destinations across India with WeCan Fly - from Jaipur to Kerala, Agra to Leh-Ladakh, and many more.">
+    <meta name="keywords" content="India tourism destinations, Jaipur, Goa, Kerala, Agra, Leh Ladakh, Varanasi, Indian tourist spots">
+    
+    <title>Destinations - WeCan Fly</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .destination-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .destination-detail:last-child {
+            border-bottom: none;
+        }
+        
+        .destination-detail-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .destination-detail-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .destination-highlight {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .destination-highlight i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+        
+        .destination-facts {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .destination-facts h3 {
+            margin-bottom: 15px;
+        }
+        
+        .fact-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .page-banner {
+            height: 400px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/india-map-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .page-banner h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .page-banner p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        @media (max-width: 992px) {
+            .destination-detail {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="WeCan Fly Logo">
+                <div>
+                    <h1>WeCan Fly</h1>
+                    <span>Travel India, Live Free</span>
+                </div>
+            </div>
+            
+            <button class="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Explore India's Best Destinations</h1>
+            <p>Discover the diverse landscapes, rich history, and vibrant culture across India's most popular tourist destinations</p>
+        </div>
+    </section>
+    
+    <!-- Destinations Section -->
+    <section class="destination-details">
+        <div class="container">
+            <!-- Ad Space -->
+            <div class="ad-container">
+                <p>Space reserved for Google AdSense</p>
+            </div>
+            
+            <!-- Jaipur -->
+            <div id="jaipur" class="destination-detail animate-on-scroll">
+                <div class="destination-detail-image">
+                    <img src="images/jaipur-large.jpg" alt="Jaipur, The Pink City">
+                </div>
+                <div class="destination-detail-content">
+                    <h2>Jaipur, Rajasthan</h2>
+                    <p>Known as the "Pink City," Jaipur is the capital of Rajasthan and forms part of the Golden Triangle tourist circuit. Founded in 1727 by Maharaja Sawai Jai Singh II, the city is renowned for its stunning architecture, vibrant bazaars, and rich cultural heritage.</p>
+                    
+                    <div class="destination-facts">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-list">
+                            <div class="destination-highlight">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Capital of Rajasthan</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>Best Time: October - March</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-plane"></i>
+                                <span>International Airport</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-language"></i>
+                                <span>Languages: Hindi, Rajasthani</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Top attractions include the magnificent Amber Fort, City Palace, Hawa Mahal (Palace of Winds), Jantar Mantar observatory, and the vibrant bazaars of the old city.</p>
+                    
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Magnificent palaces and forts showcasing Rajput architecture</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Rich cultural experiences and traditional Rajasthani folk performances</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Colorful markets selling textiles, jewelry, and handicrafts</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="packages.html#jaipur" class="btn">View Jaipur Packages</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Goa -->
+            <div id="goa" class="destination-detail animate-on-scroll">
+                <div class="destination-detail-image">
+                    <img src="images/goa-large.jpg" alt="Beaches of Goa">
+                </div>
+                <div class="destination-detail-content">
+                    <h2>Goa</h2>
+                    <p>India's smallest state is also one of its most popular tourist destinations. With its pristine beaches, Portuguese colonial architecture, and vibrant nightlife, Goa offers a unique blend of Indian and Western cultures.</p>
+                    
+                    <div class="destination-facts">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-list">
+                            <div class="destination-highlight">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Western coastal state</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>Best Time: November - February</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-plane"></i>
+                                <span>International Airport at Dabolim</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-language"></i>
+                                <span>Languages: Konkani, English</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Goa is divided into North and South Goa, each offering different experiences. North Goa is known for its lively beaches like Baga and Calangute, while South Goa offers more serene and less crowded beaches like Palolem and Agonda.</p>
+                    
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Beautiful beaches with golden sands and water sports</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Portuguese-influenced architecture and historic churches</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Vibrant nightlife and seafood cuisine</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="packages.html#goa" class="btn">View Goa Packages</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ad Space -->
+            <div class="ad-container">
+                <p>Space reserved for Google AdSense</p>
+            </div>
+            
+            <!-- Kerala -->
+            <div id="kerala" class="destination-detail animate-on-scroll">
+                <div class="destination-detail-image">
+                    <img src="images/kerala-large.jpg" alt="Kerala Backwaters">
+                </div>
+                <div class="destination-detail-content">
+                    <h2>Kerala</h2>
+                    <p>Known as "God's Own Country," Kerala is famous for its emerald backwaters, lush hill stations, pristine beaches, and Ayurvedic traditions. Located on the Malabar Coast, it offers a serene escape into nature's paradise.</p>
+                    
+                    <div class="destination-facts">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-list">
+                            <div class="destination-highlight">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Southwestern coastal state</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>Best Time: September - March</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-plane"></i>
+                                <span>International Airports at Kochi, Thiruvananthapuram, and Kozhikode</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-language"></i>
+                                <span>Language: Malayalam</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Kerala's major attractions include the backwaters of Alleppey and Kumarakom, hill stations like Munnar and Wayanad, beaches of Kovalam and Varkala, and wildlife sanctuaries like Periyar and Silent Valley.</p>
+                    
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Serene backwater cruises on traditional houseboats</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Lush tea plantations and spice gardens</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Traditional Ayurvedic wellness treatments</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="packages.html#kerala" class="btn">View Kerala Packages</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Agra -->
+            <div id="agra" class="destination-detail animate-on-scroll">
+                <div class="destination-detail-image">
+                    <img src="images/agra-large.jpg" alt="Taj Mahal, Agra">
+                </div>
+                <div class="destination-detail-content">
+                    <h2>Agra, Uttar Pradesh</h2>
+                    <p>Home to the iconic Taj Mahal, Agra is a city steeped in Mughal heritage. This historical city on the banks of the Yamuna River is an essential part of India's Golden Triangle tourist circuit.</p>
+                    
+                    <div class="destination-facts">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-list">
+                            <div class="destination-highlight">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Uttar Pradesh</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>Best Time: October - March</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-plane"></i>
+                                <span>Nearest Airport: Delhi (220 km)</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-language"></i>
+                                <span>Languages: Hindi, Urdu</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Beyond the Taj Mahal, Agra offers other magnificent Mughal monuments like the Agra Fort (a UNESCO World Heritage site), Itimad-ud-Daulah's Tomb (often called the "Baby Taj"), and Fatehpur Sikri, the abandoned Mughal capital.</p>
+                    
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>The Taj Mahal - one of the Seven Wonders of the World</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Magnificent Mughal architecture and history</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Famous for marble handicrafts and leather goods</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="packages.html#agra" class="btn">View Agra Packages</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Leh-Ladakh -->
+            <div id="ladakh" class="destination-detail animate-on-scroll">
+                <div class="destination-detail-image">
+                    <img src="images/ladakh-large.jpg" alt="Leh Ladakh Landscape">
+                </div>
+                <div class="destination-detail-content">
+                    <h2>Leh-Ladakh</h2>
+                    <p>Often referred to as "Little Tibet" or the "Land of High Passes," Ladakh is famous for its stunning landscapes, Buddhist monasteries, and adventure activities. This high-altitude desert is situated in the northernmost part of India.</p>
+                    
+                    <div class="destination-facts">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-list">
+                            <div class="destination-highlight">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Union Territory in Northern India</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>Best Time: May - September</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-plane"></i>
+                                <span>Leh Airport (limited connectivity)</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-language"></i>
+                                <span>Languages: Ladakhi, Tibetan, Hindi</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>The region offers breathtaking high-altitude lakes like Pangong Tso and Tso Moriri, ancient monasteries including Thiksey and Hemis, and challenging trekking routes. The magnetic hill, sand dunes at Hunder, and the confluence of Indus and Zanskar rivers are other attractions.</p>
+                    
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Dramatic landscapes with mountains, lakes, and high-altitude deserts</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Ancient Buddhist monasteries and culture</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Adventure activities like trekking, mountain biking, and river rafting</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="packages.html#ladakh" class="btn">View Ladakh Packages</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ad Space -->
+            <div class="ad-container">
+                <p>Space reserved for Google AdSense</p>
+            </div>
+            
+            <!-- Varanasi -->
+            <div id="varanasi" class="destination-detail animate-on-scroll">
+                <div class="destination-detail-image">
+                    <img src="images/varanasi-large.jpg" alt="Varanasi Ghats">
+                </div>
+                <div class="destination-detail-content">
+                    <h2>Varanasi, Uttar Pradesh</h2>
+                    <p>One of the world's oldest continuously inhabited cities, Varanasi (also known as Banaras or Kashi) is the spiritual capital of India. Situated on the banks of the sacred Ganges River, it's a major religious hub for Hindus.</p>
+                    
+                    <div class="destination-facts">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-list">
+                            <div class="destination-highlight">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Uttar Pradesh</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>Best Time: October - March</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-plane"></i>
+                                <span>Lal Bahadur Shastri International Airport</span>
+                            </div>
+                            <div class="destination-highlight">
+                                <i class="fas fa-language"></i>
+                                <span>Languages: Hindi, Bhojpuri</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>The city is famous for its ghats (riverfront steps), where religious ceremonies and cremations take place. The evening Ganga Aarti (prayer ceremony) at Dashashwamedh Ghat is a mesmerizing spectacle. Varanasi is also home to numerous temples, including the Kashi Vishwanath Temple, one of the most sacred Hindu temples.</p>
+                    
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Ancient spiritual traditions and rituals</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Boat rides on the sacred Ganges River</span>
+                    </div>
+                    <div class="destination-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>Rich cultural heritage with music, art, and silk weaving</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="packages.html#varanasi" class="btn">View Varanasi Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cta-bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: white;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Experience These Amazing Destinations?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">Let us help you plan the perfect Indian adventure with our customized travel packages.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="packages.html" class="btn">View Packages</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-company">
+                <h3>WeCan Fly</h3>
+                <p>Providing exceptional travel experiences across India since 2020. Our mission is to help travelers discover the beauty and diversity of India.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Popular Destinations</h3>
+                <ul>
+                    <li><a href="destinations.html#jaipur">Jaipur</a></li>
+                    <li><a href="destinations.html#goa">Goa</a></li>
+                    <li><a href="destinations.html#kerala">Kerala</a></li>
+                    <li><a href="destinations.html#agra">Agra</a></li>
+                    <li><a href="destinations.html#ladakh">Leh-Ladakh</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tourism Road, New Delhi, India</li>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@wecanfly.com</li>
+                    <li><a href="https://wa.me/919876543210"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 WeCan Fly. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

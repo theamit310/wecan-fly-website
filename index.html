@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WeCan Fly - Travel India, Live Free. Discover amazing tour packages for India's most beautiful destinations.">
+    <meta name="keywords" content="India tourism, travel packages, Indian destinations, Jaipur, Goa, Kerala, Agra, Leh, Varanasi">
+    
+    <title>WeCan Fly - Travel India, Live Free</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="WeCan Fly Logo">
+                <div>
+                    <h1>WeCan Fly</h1>
+                    <span>Travel India, Live Free</span>
+                </div>
+            </div>
+            
+            <button class="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover The Beauty of India</h1>
+            <p>Experience breathtaking landscapes, rich culture, and unforgettable adventures with our premium travel packages.</p>
+            <div class="hero-buttons">
+                <a href="destinations.html" class="btn">Explore Destinations</a>
+                <a href="packages.html" class="btn btn-secondary">View Packages</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Destinations -->
+    <section class="destinations">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="destination-grid">
+                <!-- Destination 1 -->
+                <div class="destination-card animate-on-scroll">
+                    <div class="destination-img">
+                        <img src="images/jaipur.jpg" alt="Jaipur, Rajasthan">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Jaipur, Rajasthan</h3>
+                        <p>Explore the Pink City with its magnificent palaces, colorful bazaars, and rich cultural heritage.</p>
+                        <a href="destinations.html#jaipur" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 2 -->
+                <div class="destination-card animate-on-scroll">
+                    <div class="destination-img">
+                        <img src="images/goa.jpg" alt="Goa">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Goa</h3>
+                        <p>Experience the perfect blend of beautiful beaches, vibrant nightlife and Portuguese architecture.</p>
+                        <a href="destinations.html#goa" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 3 -->
+                <div class="destination-card animate-on-scroll">
+                    <div class="destination-img">
+                        <img src="images/kerala.jpg" alt="Kerala">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Kerala</h3>
+                        <p>Relax in God's Own Country with its serene backwaters, lush green landscapes, and Ayurvedic retreats.</p>
+                        <a href="destinations.html#kerala" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px; text-align: center;">
+                <a href="destinations.html" class="btn btn-secondary">View All Destinations</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Ad Space -->
+    <div class="container">
+        <div class="ad-container">
+            <p>Space reserved for Google AdSense</p>
+        </div>
+    </div>
+    
+    <!-- Featured Packages -->
+    <section class="packages">
+        <div class="container">
+            <h2 class="section-title">Featured Travel Packages</h2>
+            <div class="package-tabs">
+                <button class="tab-btn active" data-target="budget">Budget</button>
+                <button class="tab-btn" data-target="premium">Premium</button>
+                <button class="tab-btn" data-target="group">Group Tours</button>
+            </div>
+            
+            <!-- Budget Packages -->
+            <div id="budget" class="package-section package-grid">
+                <!-- Package 1 -->
+                <div class="package-card animate-on-scroll">
+                    <div class="package-img">
+                        <img src="images/agra-package.jpg" alt="Agra Weekend Package">
+                    </div>
+                    <div class="package-content">
+                        <h3>Agra Weekend Getaway</h3>
+                        <div class="package-meta">
+                            <span><i class="far fa-clock"></i> 2 Days / 1 Night</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Agra</span>
+                        </div>
+                        <p>A quick weekend trip to explore the Taj Mahal, Agra Fort, and more.</p>
+                        <div class="package-price">
+                            From ₹4,999 per person
+                        </div>
+                        <a href="packages.html#agra-weekend" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="package-card animate-on-scroll">
+                    <div class="package-img">
+                        <img src="images/jaipur-package.jpg" alt="Jaipur Budget Tour">
+                    </div>
+                    <div class="package-content">
+                        <h3>Jaipur Budget Tour</h3>
+                        <div class="package-meta">
+                            <span><i class="far fa-clock"></i> 3 Days / 2 Nights</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Jaipur</span>
+                        </div>
+                        <p>Experience the beauty of the Pink City without breaking the bank.</p>
+                        <div class="package-price">
+                            From ₹8,499 per person
+                        </div>
+                        <a href="packages.html#jaipur-budget" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Premium Packages -->
+            <div id="premium" class="package-section package-grid" style="display: none;">
+                <!-- Package 1 -->
+                <div class="package-card animate-on-scroll">
+                    <div class="package-img">
+                        <img src="images/kerala-luxury.jpg" alt="Kerala Luxury Package">
+                    </div>
+                    <div class="package-content">
+                        <h3>Kerala Luxury Experience</h3>
+                        <div class="package-meta">
+                            <span><i class="far fa-clock"></i> 7 Days / 6 Nights</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Kerala</span>
+                        </div>
+                        <p>Luxury houseboat stays, premium resorts, and private experiences throughout Kerala.</p>
+                        <div class="package-price">
+                            From ₹45,000 per person
+                        </div>
+                        <a href="packages.html#kerala-luxury" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="package-card animate-on-scroll">
+                    <div class="package-img">
+                        <img src="images/rajasthan-royal.jpg" alt="Royal Rajasthan">
+                    </div>
+                    <div class="package-content">
+                        <h3>Royal Rajasthan Tour</h3>
+                        <div class="package-meta">
+                            <span><i class="far fa-clock"></i> 10 Days / 9 Nights</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Rajasthan</span>
+                        </div>
+                        <p>Stay in heritage palaces, enjoy private guided tours, and experience royal treatment.</p>
+                        <div class="package-price">
+                            From ₹75,000 per person
+                        </div>
+                        <a href="packages.html#rajasthan-royal" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Group Tours -->
+            <div id="group" class="package-section package-grid" style="display: none;">
+                <!-- Package 1 -->
+                <div class="package-card animate-on-scroll">
+                    <div class="package-img">
+                        <img src="images/ladakh-group.jpg" alt="Ladakh Group Tour">
+                    </div>
+                    <div class="package-content">
+                        <h3>Ladakh Adventure Group</h3>
+                        <div class="package-meta">
+                            <span><i class="far fa-clock"></i> 8 Days / 7 Nights</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Ladakh</span>
+                        </div>
+                        <p>Join a group of adventure seekers exploring the stunning landscapes of Ladakh.</p>
+                        <div class="package-price">
+                            From ₹25,000 per person
+                        </div>
+                        <a href="packages.html#ladakh-group" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="package-card animate-on-scroll">
+                    <div class="package-img">
+                        <img src="images/northeast-group.jpg" alt="Northeast Explorer">
+                    </div>
+                    <div class="package-content">
+                        <h3>Northeast Explorer</h3>
+                        <div class="package-meta">
+                            <span><i class="far fa-clock"></i> 12 Days / 11 Nights</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Northeast India</span>
+                        </div>
+                        <p>Group adventure through the unexplored beauty of Northeast India.</p>
+                        <div class="package-price">
+                            From ₹35,000 per person
+                        </div>
+                        <a href="packages.html#northeast-explorer" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px; text-align: center;">
+                <a href="packages.html" class="btn btn-secondary">View All Packages</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose WeCan Fly?</h2>
+            <div class="value-grid">
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Expert Guides</h3>
+                    <p>Our knowledgeable guides ensure you get the most authentic experiences throughout your journey.</p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Personalized Service</h3>
+                    <p>We tailor each trip to your preferences, ensuring a unique and memorable experience.</p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety First</h3>
+                    <p>Your safety is our priority, with strict protocols and 24/7 emergency support.</p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Best Value</h3>
+                    <p>Competitive pricing with no hidden costs, ensuring the best value for your money.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Ad Space -->
+    <div class="container">
+        <div class="ad-container">
+            <p>Space reserved for Google AdSense</p>
+        </div>
+    </div>
+    
+    <!-- Call to Action -->
+    <section class="cta" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cta-bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: white;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Experience India?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">Start your journey with WeCan Fly today and create memories that will last a lifetime.</p>
+            <a href="contact.html" class="btn btn-secondary">Contact Us Now</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-company">
+                <h3>WeCan Fly</h3>
+                <p>Providing exceptional travel experiences across India since 2020. Our mission is to help travelers discover the beauty and diversity of India.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Popular Destinations</h3>
+                <ul>
+                    <li><a href="destinations.html#jaipur">Jaipur</a></li>
+                    <li><a href="destinations.html#goa">Goa</a></li>
+                    <li><a href="destinations.html#kerala">Kerala</a></li>
+                    <li><a href="destinations.html#agra">Agra</a></li>
+                    <li><a href="destinations.html#ladakh">Leh-Ladakh</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tourism Road, New Delhi, India</li>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@wecanfly.com</li>
+                    <li><a href="https://wa.me/919876543210"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 WeCan Fly. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

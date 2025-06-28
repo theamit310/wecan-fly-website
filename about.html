@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about WeCan Fly, India's premier tourism company dedicated to providing unforgettable travel experiences across India with personalized service and insider knowledge.">
+    <meta name="keywords" content="WeCan Fly, about us, India tourism company, travel agency India, tourism mission, Indian travel experiences">
+    
+    <title>About Us - WeCan Fly</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: white;
+            border: 4px solid var(--secondary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        
+        .right::after {
+            left: -13px;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: var(--shadow);
+        }
+        
+        .timeline-year {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .team-member {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        
+        .team-photo {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-info {
+            padding: 20px;
+        }
+        
+        .team-info h3 {
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .team-position {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .team-social a {
+            color: var(--dark-color);
+            transition: color 0.3s ease;
+        }
+        
+        .team-social a:hover {
+            color: var(--primary-color);
+        }
+        
+        .testimonial-slider {
+            position: relative;
+            overflow: hidden;
+            padding: 40px 0;
+        }
+        
+        .testimonial-slide {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+        
+        .testimonial-role {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .testimonial-prev,
+        .testimonial-next {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-prev:hover,
+        .testimonial-next:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .mission-vision-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .mission-box,
+        .vision-box {
+            flex: 1;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: var(--shadow);
+        }
+        
+        .mission-box h3,
+        .vision-box h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+            font-size: 1.5rem;
+        }
+        
+        .mission-box h3 i,
+        .vision-box h3 i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 991px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 18px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+            
+            .mission-vision-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="WeCan Fly Logo">
+                <div>
+                    <h1>WeCan Fly</h1>
+                    <span>Travel India, Live Free</span>
+                </div>
+            </div>
+            
+            <button class="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/about-banner.jpg');">
+        <div class="banner-content">
+            <h1>About WeCan Fly</h1>
+            <p>Our journey, mission, and commitment to creating unforgettable travel experiences in India</p>
+        </div>
+    </section>
+    
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2020, WeCan Fly was born from a passion for showcasing the true essence of India. Our founders, avid travelers themselves, recognized the need for a tourism company that goes beyond the typical tourist experiences to provide authentic, immersive journeys across India's diverse landscapes and cultures.</p>
+                    <p>What started as a small team with big dreams has now grown into a trusted name in India's tourism industry. We take pride in our deep knowledge of India's hidden gems, our sustainable travel practices, and our commitment to creating personalized experiences that leave lasting impressions.</p>
+                    <p>Our name "WeCan Fly" represents our belief that travel lifts the human spirit, broadens horizons, and creates connections that transcend borders. We strive to give our clients the wings to explore India with freedom, comfort, and joy.</p>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <img src="images/about-team.jpg" alt="WeCan Fly Team">
+                </div>
+            </div>
+            
+            <!-- Mission and Vision -->
+            <div class="mission-vision-container animate-on-scroll">
+                <div class="mission-box">
+                    <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                    <p>To create unforgettable travel experiences that showcase the authentic beauty, culture, and spirit of India while fostering sustainable tourism practices that benefit local communities and preserve our natural and cultural heritage for future generations.</p>
+                </div>
+                
+                <div class="vision-box">
+                    <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                    <p>To become India's most trusted tourism partner, known for our personalized service, insider knowledge, and commitment to responsible travel, making the diversity of India accessible and memorable for travelers from around the world.</p>
+                </div>
+            </div>
+            
+            <!-- Ad Space -->
+            <div class="ad-container">
+                <p>Space reserved for Google AdSense</p>
+            </div>
+            
+            <!-- Our Journey -->
+            <h2 class="section-title">Our Journey</h2>
+            <div class="timeline animate-on-scroll">
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020</div>
+                        <h3>Humble Beginnings</h3>
+                        <p>WeCan Fly was founded with a vision to showcase India's diverse beauty. We started with just 3 team members and offered tours to 5 destinations.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021</div>
+                        <h3>Digital Transformation</h3>
+                        <p>Launched our first website and expanded our online presence. Introduced virtual tour experiences during the global travel restrictions.</p>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <h3>Growing Our Reach</h3>
+                        <p>Expanded our team to 15 members and added 10 new destinations across India. Partnered with premium hotels and local experience providers.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3>Sustainability Initiative</h3>
+                        <p>Launched our "Travel Responsibly" initiative focusing on sustainable tourism practices and supporting local communities.</p>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3>Award Recognition</h3>
+                        <p>Recognized as one of India's Top 10 Emerging Tourism Companies. Expanded to serve international clients from 25+ countries.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3>Today & Beyond</h3>
+                        <p>Continuing to innovate and expand our services, with a focus on authentic experiences and responsible tourism across all of India.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Our Values -->
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid animate-on-scroll">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>We are passionate about India and its incredible diversity. This passion drives everything we do and every experience we create.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We believe in transparency, honesty, and ethical practices in all our dealings with clients, partners, and communities.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>We are committed to responsible tourism that preserves natural resources and supports local communities.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Personalization</h3>
+                    <p>We understand that every traveler is unique, and we tailor our services to meet individual preferences and needs.</p>
+                </div>
+            </div>
+            
+            <!-- Ad Space -->
+            <div class="ad-container">
+                <p>Space reserved for Google AdSense</p>
+            </div>
+            
+            <!-- Meet Our Team -->
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member animate-on-scroll">
+                    <div class="team-photo">
+                        <img src="images/team-member1.jpg" alt="Rahul Sharma">
+                    </div>
+                    <div class="team-info">
+                        <h3>Rahul Sharma</h3>
+                        <div class="team-position">Founder & CEO</div>
+                        <p>With over 15 years in the tourism industry and a passion for exploring every corner of India, Rahul leads our vision of creating authentic travel experiences.</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member animate-on-scroll">
+                    <div class="team-photo">
+                        <img src="images/team-member2.jpg" alt="Priya Patel">
+                    </div>
+                    <div class="team-info">
+                        <h3>Priya Patel</h3>
+                        <div class="team-position">Travel Experience Director</div>
+                        <p>A travel enthusiast with expertise in curating unique cultural experiences, Priya ensures every journey with us is memorable and authentic.</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member animate-on-scroll">
+                    <div class="team-photo">
+                        <img src="images/team-member3.jpg" alt="Vikram Singh">
+                    </div>
+                    <div class="team-info">
+                        <h3>Vikram Singh</h3>
+                        <div class="team-position">Head of Operations</div>
+                        <p>With a keen eye for detail and logistics expertise, Vikram ensures that every trip runs smoothly from planning to completion.</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member animate-on-scroll">
+                    <div class="team-photo">
+                        <img src="images/team-member4.jpg" alt="Anjali Desai">
+                    </div>
+                    <div class="team-info">
+                        <h3>Anjali Desai</h3>
+                        <div class="team-position">Customer Relations Manager</div>
+                        <p>Dedicated to providing exceptional service, Anjali ensures that our clients' needs are met at every stage of their journey.</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-slider animate-on-scroll">
+                <div class="testimonial-slide">
+                    <div class="testimonial-quote">
+                        "Our trip to Rajasthan with WeCan Fly exceeded all expectations. The personalized itinerary, knowledgeable guides, and attention to detail made our family vacation truly special. We experienced the real India, beyond the tourist spots!"
+                    </div>
+                    <div class="testimonial-author">Sarah Johnson</div>
+                    <div class="testimonial-role">from United States</div>
+                </div>
+                
+                <div class="testimonial-slide" style="display: none;">
+                    <div class="testimonial-quote">
+                        "As a solo female traveler, safety was my biggest concern. WeCan Fly made me feel secure throughout my journey across North India. Their local expertise and 24/7 support allowed me to fully enjoy the rich culture and breathtaking landscapes."
+                    </div>
+                    <div class="testimonial-author">Emma Thompson</div>
+                    <div class="testimonial-role">from United Kingdom</div>
+                </div>
+                
+                <div class="testimonial-slide" style="display: none;">
+                    <div class="testimonial-quote">
+                        "Our Kerala backwaters experience arranged by WeCan Fly was the highlight of our honeymoon. The houseboat stay, Ayurvedic spa treatments, and culinary experiences were perfectly curated. We couldn't have asked for a better start to our married life!"
+                    </div>
+                    <div class="testimonial-author">Akshay and Neha Gupta</div>
+                    <div class="testimonial-role">from Mumbai, India</div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <div class="testimonial-prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="testimonial-next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cta-bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: white;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Start Your Indian Adventure Today</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">Let our team of travel experts help you create the perfect journey through the diverse landscapes of India.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="packages.html" class="btn">Explore Our Packages</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-company">
+                <h3>WeCan Fly</h3>
+                <p>Providing exceptional travel experiences across India since 2020. Our mission is to help travelers discover the beauty and diversity of India.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Popular Destinations</h3>
+                <ul>
+                    <li><a href="destinations.html#jaipur">Jaipur</a></li>
+                    <li><a href="destinations.html#goa">Goa</a></li>
+                    <li><a href="destinations.html#kerala">Kerala</a></li>
+                    <li><a href="destinations.html#agra">Agra</a></li>
+                    <li><a href="destinations.html#ladakh">Leh-Ladakh</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tourism Road, New Delhi, India</li>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@wecanfly.com</li>
+                    <li><a href="https://wa.me/919876543210"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 WeCan Fly. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

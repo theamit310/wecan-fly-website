@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact WeCan Fly for all your India travel needs. Get in touch with our travel experts to plan your perfect Indian adventure.">
+    <meta name="keywords" content="contact WeCan Fly, India travel inquiry, tourism company contact, travel booking India">
+    
+    <title>Contact Us - WeCan Fly</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        
+        .contact-icon {
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            font-size: 1.5rem;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-info p, .contact-info a {
+            color: #555;
+        }
+        
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+        
+        .error-message {
+            color: #f44336;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+        
+        .form-group input.error,
+        .form-group textarea.error,
+        .form-group select.error {
+            border-color: #f44336;
+        }
+        
+        .success-message {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .faq-container {
+            margin-top: 40px;
+        }
+        
+        .faq-item {
+            background-color: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="WeCan Fly Logo">
+                <div>
+                    <h1>WeCan Fly</h1>
+                    <span>Travel India, Live Free</span>
+                </div>
+            </div>
+            
+            <button class="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/contact-banner.jpg');">
+        <div class="banner-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our travel experts to plan your perfect Indian adventure</p>
+        </div>
+    </section>
+    
+    <!-- Contact Information Section -->
+    <section class="contact-details">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-flex" style="display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 50px;">
+                <div class="contact-left" style="flex: 1; min-width: 300px;">
+                    <p>We're here to help you plan your perfect Indian adventure. Whether you have questions about our packages, need a custom itinerary, or want to discuss travel requirements, our team is ready to assist you.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Our Office</h3>
+                                <p>123 Tourism Road, Connaught Place<br>New Delhi - 110001, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+919876543210">+91 98765 43210</a> (General Inquiries)<br>
+                                <a href="tel:+919876543211">+91 98765 43211</a> (Booking Support)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@wecanfly.com">info@wecanfly.com</a> (General Inquiries)<br>
+                                <a href="mailto:bookings@wecanfly.com">bookings@wecanfly.com</a> (Bookings)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 4:00 PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/919876543210">+91 98765 43210</a><br>
+                                Available for quick responses during business hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact" style="margin-top: 30px;">
+                        <h3>Connect With Us</h3>
+                        <div style="display: flex; gap: 15px; margin-top: 10px;">
+                            <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: #3b5998; color: white;" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: #1da1f2; color: white;" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: #c32aa3; color: white;" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: #0a66c2; color: white;" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-right" style="flex: 1; min-width: 300px;">
+                    <div class="contact-form animate-on-scroll">
+                        <h3>Send Us a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">-- Select a Subject --</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="booking">Booking Information</option>
+                                    <option value="custom">Custom Tour Request</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" name="newsletter" checked>
+                                    Subscribe to our newsletter for travel deals and updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ad Space -->
+            <div class="ad-container">
+                <p>Space reserved for Google AdSense</p>
+            </div>
+            
+            <!-- Map Section -->
+            <h2 class="section-title">Our Location</h2>
+            <div class="map animate-on-scroll">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.6261798781007!2d77.2104448763416!3d28.63050318434644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1708426335988!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <!-- FAQs Section -->
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container animate-on-scroll">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept various payment methods including credit/debit cards (Visa, MasterCard, American Express), bank transfers, PayPal, and for Indian customers, we also accept UPI payments. For tour packages, we typically require a 25% deposit to confirm your booking, with the balance due 30 days before your trip begins.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How far in advance should I book my trip?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For the best experience and availability, we recommend booking at least 2-3 months in advance, especially for travel during peak tourist seasons (October-March). However, we do accommodate last-minute bookings whenever possible, subject to availability of accommodations and services.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your cancellation policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our standard cancellation policy offers:
+                        <br>- Full refund minus processing fee for cancellations 30+ days before the trip
+                        <br>- 75% refund for cancellations 21-30 days before the trip
+                        <br>- 50% refund for cancellations 14-20 days before the trip
+                        <br>- No refund for cancellations less than 14 days before the trip
+                        <br>We also offer a flexible booking option with additional fee that allows for more generous cancellation terms.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you arrange custom itineraries?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in creating customized travel experiences tailored to your interests, preferences, and budget. Our travel experts will work with you to design a personalized itinerary that includes the destinations you want to visit, the activities you enjoy, and accommodations that match your comfort level. Contact us with your requirements, and we'll create the perfect travel plan for you.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need a visa to visit India?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most foreign nationals require a visa to visit India. E-Visa facilities are available for citizens of many countries, allowing you to apply online. The process typically takes 3-5 business days. We recommend applying for your visa at least one month before your trip. While we don't directly process visa applications, we're happy to provide guidance and the necessary documentation to support your visa application, such as confirmed itineraries and accommodation bookings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-company">
+                <h3>WeCan Fly</h3>
+                <p>Providing exceptional travel experiences across India since 2020. Our mission is to help travelers discover the beauty and diversity of India.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Popular Destinations</h3>
+                <ul>
+                    <li><a href="destinations.html#jaipur">Jaipur</a></li>
+                    <li><a href="destinations.html#goa">Goa</a></li>
+                    <li><a href="destinations.html#kerala">Kerala</a></li>
+                    <li><a href="destinations.html#agra">Agra</a></li>
+                    <li><a href="destinations.html#ladakh">Leh-Ladakh</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tourism Road, New Delhi, India</li>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@wecanfly.com</li>
+                    <li><a href="https://wa.me/919876543210"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 WeCan Fly. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <script>
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Form validation and submission
+            const contactForm = document.getElementById('contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    let isValid = true;
+                    const name = document.getElementById('name');
+                    const email = document.getElementById('email');
+                    const subject = document.getElementById('subject');
+                    const message = document.getElementById('message');
+                    
+                    // Simple validation
+                    if (!name.value.trim()) {
+                        isValid = false;
+                        showError(name, 'Name is required');
+                    } else {
+                        removeError(name);
+                    }
+                    
+                    if (!email.value.trim()) {
+                        isValid = false;
+                        showError(email, 'Email is required');
+                    } else if (!isValidEmail(email.value.trim())) {
+                        isValid = false;
+                        showError(email, 'Please enter a valid email');
+                    } else {
+                        removeError(email);
+                    }
+                    
+                    if (!subject.value) {
+                        isValid = false;
+                        showError(subject, 'Please select a subject');
+                    } else {
+                        removeError(subject);
+                    }
+                    
+                    if (!message.value.trim()) {
+                        isValid = false;
+                        showError(message, 'Message is required');
+                    } else {
+                        removeError(message);
+                    }
+                    
+                    if (isValid) {
+                        // Show success message
+                        const successMessage = document.createElement('div');
+                        successMessage.className = 'success-message';
+                        successMessage.innerHTML = '<i class="fas fa-check-circle" style="font-size: 1.5rem; margin-right: 10px;"></i> Your message has been sent successfully! We will get back to you soon.';
+                        
+                        contactForm.innerHTML = '';
+                        contactForm.appendChild(successMessage);
+                    }
+                });
+            }
+            
+            function showError(input, message) {
+                const formGroup = input.parentElement;
+                const errorMessage = formGroup.querySelector('.error-message') || document.createElement('div');
+                
+                errorMessage.className = 'error-message';
+                errorMessage.textContent = message;
+                
+                if (!formGroup.querySelector('.error-message')) {
+                    formGroup.appendChild(errorMessage);
+                }
+                
+                input.classList.add('error');
+            }
+            
+            function removeError(input) {
+                const formGroup = input.parentElement;
+                const errorMessage = formGroup.querySelector('.error-message');
+                
+                if (errorMessage) {
+                    formGroup.removeChild(errorMessage);
+                }
+                
+                input.classList.remove('error');
+            }
+            
+            function isValidEmail(email) {
+                const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return regex.test(email);
+            }
+        });
+    </script>
+</body>
+</html>
